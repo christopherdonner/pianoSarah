@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
   <title>Sarah Scott Piano</title>
   <meta property="og:title" content="Sarah Scott Piano" />
   <meta property="og:type" content="website" />
@@ -18,14 +20,14 @@
       background-image: url("./images/banner.jpg");
       background-size: contain;
       background-repeat: no-repeat;
-      background-color:slategray
+      background-color: slategray
     }
 
     header {
       background: #222;
-      opacity: 0.5;
+      opacity: 0.8;
       color: white;
-      padding: 2rem;
+      /* padding: 2rem; */
       text-align: center;
     }
 
@@ -35,9 +37,12 @@
     }
 
     nav {
+      top: 0px;
       background: #444;
       padding: 1rem;
       text-align: center;
+      position: sticky;
+      z-index: 1000;
     }
 
     nav a {
@@ -45,6 +50,7 @@
       margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
+      position: sticky;
     }
 
     section {
@@ -55,6 +61,7 @@
       background: darkslategrey;
       padding: 3rem 2rem;
       text-align: center;
+      opacity: 0.8;
     }
 
     .hero h2 {
@@ -64,10 +71,20 @@
 
     #about {
       background: #666;
-      opacity: 0.8;
+      opacity: 0.9;
     }
 
-    article iframe{
+    #lessons {
+      /* background: #555; */
+      /* opacity: 0.6; */
+      color: #eee
+    }
+
+    #lessons h3 {
+      color: yellow;
+    }
+
+    article iframe {
       width: 100%;
       height: 400px;
       border: none;
@@ -82,21 +99,27 @@
     }
   </style>
 </head>
-<body>
-  <header>
-    <h1>Piano Lessons with Sarah Scott</h1>
-    <p>Professional, patient, and personalized piano instruction.</p>
-  </header>
 
-  <nav>
-    <a href="#lessons">Lessons</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<body>
+
+    <nav>
+      <a href="#lessons">Lessons</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  <!-- <header>
+
+    <h1>Piano with Sarah!</h1>
+    <p>Professional, patient, and personalized piano instruction.</p>
+  </header> -->
+
+
 
   <section class="hero">
     <h2>Learn to Play Piano with Sarah Scott</h2>
-    <p>Private lessons for children and adults of all levels in Waterloo, Ontario.</p>
+    <p>Professional, patient, and personalized piano instruction.</p>
+    <p>Private lessons for children and adults of all levels in a clean, comfortable home setting in Waterloo, Ontario.
+    </p>
   </section>
 
   <section id="lessons">
@@ -104,13 +127,18 @@
     <ul>
       <li>Beginner to advanced lessons</li>
       <li>Music theory and sight reading</li>
-      <li>Recital and exam preparation</li>
+      <li>Recital and RCM exam preparation</li>
+      <li>$20 half hour lessons</li>
+      <li>Book your free trial today!</li>
     </ul>
+
   </section>
 
   <section id="about">
     <h2>About Sarah</h2>
-    <p>Sarah is a certified teacher with the Royal Conservatory of Music. She is a classically trained pianist with 5 years of teaching experience. She believes in nurturing each student's musical potential and tailoring her teaching methods to individual learning styles.</p>
+    <p>Sarah is a certified teacher with the Royal Conservatory of Music. She is a classically trained pianist with 5
+      years of teaching experience. She believes in nurturing each student's musical potential and tailoring her
+      teaching methods to individual learning styles.</p>
   </section>
 
   <section id="contact">
@@ -118,11 +146,9 @@
     <p>Email: <a href="mailto:scottsarah@hotmail.com">scottsarah@hotmail.com</a></p>
     <p>Phone: (226) 606-5729</p>
     <article>
-<iframe src="https://storage.googleapis.com/maps-solutions-5dkkbhnli0/locator-plus/4flx/locator-plus.html"
-  width="100%" height="100%"
-  style="border:0;"
-  loading="lazy">
-</iframe>
+      <iframe src="https://storage.googleapis.com/maps-solutions-5dkkbhnli0/locator-plus/4flx/locator-plus.html"
+        width="100%" height="100%" style="border:0;" loading="lazy">
+      </iframe>
     </article>
   </section>
 
@@ -131,4 +157,5 @@
     <p> Waterloo, Ontario, Canada</p>
   </footer>
 </body>
+
 </html>
